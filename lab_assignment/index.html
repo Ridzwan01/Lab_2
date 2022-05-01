@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Resume</title>
+
+    <script>
+        function sideMenu(){
+            var x = document.getElementById("idsidebar");
+            if(x.className.indexOf("w3-show") == -1){
+                x.className += " w3-show";
+            }else{
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="w3-bar w3-blue">
+        <a class="w3-bar-item w3-button w3-hide-small" href="#">Profile</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#">Education</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#">Work Experience</a>
+        <a class="w3-bar-item w3-button w3-hide-small" href="#">Contact Me</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="sideMenu()">&#9776</a>
+    </div>    
+        
+    <div id="idsidebar" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium">
+        <a class="w3-bar-item w3-button" href="#">Profile</a>
+        <a class="w3-bar-item w3-button " href="#">Education</a>
+        <a class="w3-bar-item w3-button " href="#">Work Experience</a>
+        <a class="w3-bar-item w3-button " href="#">Contact Me</a>
+        
+    </div>
+
+    <header class="w3-header w3-container w3-blue w3-padding-25 w3-center">
+        <h1>MY RESUME</h1>
+    </header>
+
+    <div id="genaral" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-center">
+            <img src="image.jpeg" width="200" height="220">
+        </div>
+        <div class="w3-container w3-third">
+            <h3><b>General</b></h3>
+        </div>
+        <div div class="w3-container w3-twothird">
+            <td><ul>
+                <li><b>Name :</b>   Muhammad Ridzwan Bin Zaini</li>
+                <li><b>Age :</b>  21</li>
+                <li><b>Telephone Number :</b>   018-2452 374</li>
+                <li><b>Address :</b>   C-5-20 Pangsapuri Seri Markisa Jalan,
+                    TPT 1 Taman Puchong Tekali,
+                    47150 Puchong Selangor</li>
+                <li><b>Email :</b>  muhammadridzwan566@gmail.com</li>
+            </ul>
+        </td>    
+        </div>
+    </div>
+
+    <div id="about" class="w3-container w3-row w3-light-blue w3-padding-32"> 
+        <div class="w3-container w3-third">
+            <h3><b>About</b></h3>            
+        </div>
+        <div class="w3-container w3-twothird">
+            <p>I am currently a student at Universiti Utara Malaysia in semester 4 and am pursuing a Bachelor of Information Technology with Honors.</p>
+        </div>
+    </div>
+
+    <div id="education" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-third">
+            <h3><b>Education</b></h3>           
+        </div>
+        <div class="w3-container w3-twothird">
+            <ul>
+                <li><b>Sijil Pelajaran Malaysia</b><br>2014 - 2018<br>Studied computer science during Sijil Pelajaran Malaysia. <br> Results 3A 4C 1D </li>
+                <li><b>Matriculation</b><br>2019 - 2020 <br>Studied accountances during matriculation.<br>CGPA 3.25</li>
+                <li><b>Undergraduate</b><br>2020 - present <br>Studying at Universiti Utara Malaysia in Bachelor of Information Technology with Honors.</li>
+            </ul>
+        </div>       
+    </div>
+
+    <div id="work" class="w3-container w3-row w3-light-blue w3-padding-32">
+        <div class="w3-container w3-third">
+            <h3><b>Work Experience</b></h3>
+        </div>
+        <div class="w3-container w3-twothird">
+            <ul>
+                <li><b>Warehouse Operator</b><br>2020 - Present<br>Started working as a part-time operator at DHL e-Commerse started after matriculation until now.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="work" class="w3-container w3-row w3-light-grey w3-padding-32">
+        <div class="w3-container w3-third">
+            <h3><b>Contact Me</b></h3>
+        </div>
+        <div class="w3-container w3-twothird">
+            <ul>
+                <li><b>Telephone Number</b><br>018-2452 374</li>
+                <li><b>Email</b><br>muhammadridzwan566@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-32">
+        <p>Copyright kamipunya.co&#169</p>
+    </footer>
+
+</body>
+
+</html>
